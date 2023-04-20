@@ -1,3 +1,4 @@
+/* eslint-disable no-sparse-arrays */
 import Work1 from '../../assets/work-1.jpg';
 import Work2 from '../../assets/work-2.png';
 import Work3 from '../../assets/work-3.png';
@@ -9,7 +10,7 @@ export const Works = [
         image: Work1,
         title: "OOP-with-Java-Lab",
         category: "Java",
-        link: "#",
+        linkdemo: "",
         linksrc: "https://github.com/qh14/OOP-with-Java-Lab",
         desc: "Practice Java OOP concepts with a series of labs"
     },
@@ -18,7 +19,7 @@ export const Works = [
         image: Work2,
         title: "Blog Website",
         category: "NodeJS",
-        link: "#",
+        linkdemo: "",
         linksrc: "https://github.com/qh14/nodejs-qhblog",
         desc: "The easy way to create a blog. Just write, publish, and share your posts with the world."
     },
@@ -27,7 +28,7 @@ export const Works = [
         image: Work3,
         title: "Restaurant System Website",
         category: "Java Web",
-        link: "#",
+        linkdemo: "",
         linksrc: "https://github.com/lequangduc/SWP_Project",
         desc: "A restaurant system website that allows customers to order food online."
     },
@@ -37,7 +38,7 @@ export const Works = [
         image: Work4,
         title: "React App Menu",
         category: "ReactJS",
-        link: "https://qh14.github.io/ReactApp_Menu/",
+        linkdemo: "https://qh14.github.io/ReactApp_Menu/",
         linksrc: "https://github.com/qh14/ReactApp_Menu",
         desc: "Website React App Menu"
     },
@@ -47,11 +48,11 @@ export const Works = [
         image: Work3,
         title: "Rubik Shop",
         category: "Java Web",
-        link: "#",
+        linkdemo: "",
         linksrc: "https://github.com/qh14/Rubik-Website",
         desc: " This is the website of a Rubik's shop. It includes the activities of buying and" +
             "selling rubik, managing the operation of the rubik shop, writing and reading" +
-            "articles about rubiks, and communicating with the shop. Customers can pay the"
+            "articles about rubiks, and communicating with the shop. Customers can pay the "
             + "bill by Paypal method"
     },
     ,
@@ -60,34 +61,16 @@ export const Works = [
         image: Work1,
         title: "Data Structures and Algorithm with Java",
         category: "Java",
-        link: "#",
+        linkdemo: "",
         linksrc: "https://github.com/qh14/Data-Structures-and-Algorithm-with-Java-NQH",
         desc: "Data Structures and Algorithm with Java"
     },
-    ,
     {
-        id: 7,
-        image: Work4,
-        title: "Birthday Reminder",
-        category: "ReactJS",
-        link: "https://qh14.github.io/ReactApp_BirthdayReminder/",
-        linksrc: "https://github.com/qh14/ReactApp_BirthdayReminder",
-        desc: "Birthday Reminder"
-    },
-    {
-        id: 8,
-        image: Work4,
-        title: "Tours",
-        category: "ReactJS",
-        link: "https://qh14.github.io/ReactProject_Tours/",
-        linksrc: "https://github.com/qh14/ReactProject_Tours",
-        desc: "Tours Project with ReactJS"
-    }, {
         id: 9,
         image: Work4,
         title: "Reviews Infomation",
         category: "ReactJS",
-        link: "https://qh14.github.io/ReactProject_ReviewInfo/",
+        linkdemo: "https://qh14.github.io/ReactProject_ReviewInfo/",
         linksrc: "https://github.com/qh14/ReactProject_ReviewInfo",
         desc: "Reviews Infomation Project with ReactJS"
     },
@@ -96,7 +79,7 @@ export const Works = [
         image: Work4,
         title: "Color Generator",
         category: "ReactJS",
-        link: "https://qh14.github.io/ReactApp-Color-Generator/",
+        linkdemo: "https://qh14.github.io/ReactApp-Color-Generator/",
         linksrc: "https://github.com/qh14/ReactApp-Color-Generator",
         desc: "Color Generator Project with ReactJS"
     }

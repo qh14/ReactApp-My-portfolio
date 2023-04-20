@@ -25,6 +25,7 @@
     display: flex;
     column-gap: 1.75rem;
     justify-content: center;
+    margin-bottom: 10px;
 }
 
 .home__social-link {
@@ -160,4 +161,8 @@
 .s11 {
     left: 70%;
     top: 90%;
+}
+
+a.mouse_wrapper {
+    text-decoration: none;
 }

@@ -19,6 +19,10 @@
     row-gap: 1rem;
 }
 
+li.nav_item {
+    margin-bottom: 15px !important;
+}
+
 .nav_link {
     font-size: 1.5rem;
     color: var(--title-color);

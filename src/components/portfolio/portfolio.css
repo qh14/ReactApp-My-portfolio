@@ -3,6 +3,10 @@
     margin-right: 5%;
 }
 
+.card {
+    border: none;
+}
+
 .work__filters {
     display: flex;
     justify-content: center;
@@ -20,9 +24,10 @@ span:hover {
     color: var(--first-color);
 }
 
-.work__container {
+.work_container {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.875rem;
+    grid-gap: 20px;
 }
 
 .work__card {
@@ -43,19 +48,27 @@ span:hover {
     font-size: var(--small-font-size);
     display: inline-block;
     padding: 0.19rem 0.625rem;
-
 }
 
-/* .work__mask {
-    background: #6c6ce5;
+.work_link {
     position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
+    bottom: 0;
 }
 
+.work_container.card-group {
+    margin: 5%;
+}
 
-.work__title{
+.card-img-top {
+    max-height: 200px;
+    object-fit: cover;
+}
 
-} */
+button.btn.btn-primary {
+    margin: 1% 2%;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}

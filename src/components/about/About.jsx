@@ -26,7 +26,9 @@ const About = () => {
         <div className="a-award">
           <div className="a-award-texts">
             <Button color="primary">
-              <a href="#">Download CV</a>
+              <a href="https://drive.google.com/drive/folders/1s0C7hHLcUlEd4l6njcuTzkQfMwE92HJc?usp=sharing">
+                Download CV
+              </a>
             </Button>
           </div>
         </div>

@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import "./portfolio.css";
 import { Works } from "./data";
+import Card from "react-bootstrap/Card";
+import CardGroup from "react-bootstrap/CardGroup";
+import Button from "react-bootstrap/Button";
+
 function Portfolio() {
   const [works, setWorks] = useState(Works);
   const setPart = (category) => {
@@ -32,31 +36,50 @@ function Portfolio() {
           ReactJS
         </span>
       </div>
-      <div className="work__container gird">
-        {works.map((work) => {
-          const { id, image, title, category, desc, link, linksrc } = work;
-          return (
-            <div className="work__card" key={id}>
-              <div className="work__thumbnail">
-                <img src={image} alt="" />
-                <div className="work__mask"></div>
-              </div>
-              <h3 className="work__category">{category}</h3>
-              <h3 className="work__title">{title}</h3>
-              <p className="work__desc">{desc}</p>
-
-              <a href={linksrc} className="work__button" target="_blank">
-                View Source Code
-                <i className="icon-link work__button"></i>
-              </a>
-
-              <a href={link} className="work__button" target="_blank">
-                View Demo
-                <i className="icon-link work__button"></i>
-              </a>
-            </div>
-          );
-        })}
+      <div>
+        <CardGroup className="work_container">
+          {works.map((work) => {
+            const { id, image, title, category, desc, linkdemo, linksrc } =
+              work;
+            return (
+              <Card key={id}>
+                <Card.Img variant="top" src={image} />
+                <Card.Body>
+                  <Card.Title>
+                    {title} | {category}
+                  </Card.Title>
+                  <Card.Text>{desc}</Card.Text>
+                </Card.Body>
+                <Card.Footer>
+                  {linksrc && (
+                    <Button>
+                      <a
+                        href={linksrc}
+                        className="work__button"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        View Source Code
+                      </a>
+                    </Button>
+                  )}
+                  {linkdemo && (
+                    <Button>
+                      <a
+                        href={linkdemo}
+                        className="work__button"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        View Demo
+                      </a>
+                    </Button>
+                  )}
+                </Card.Footer>
+              </Card>
+            );
+          })}
+        </CardGroup>
       </div>
     </section>
   );
